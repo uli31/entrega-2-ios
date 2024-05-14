@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		604EBC352BF35DC000EC3305 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604EBC342BF35DC000EC3305 /* CharacterDetailViewController.swift */; };
+		608F6F4A2BF3612700DFF3E2 /* Marvelmodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 608F6F482BF3612700DFF3E2 /* Marvelmodel.xcdatamodeld */; };
 		7B98011B2BE5B504000A4ACD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98011A2BE5B504000A4ACD /* Character.swift */; };
 		7B98011D2BE5B6DC000A4ACD /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98011C2BE5B6DC000A4ACD /* Image.swift */; };
 		7B98011F2BE5B84D000A4ACD /* URLWebSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98011E2BE5B84D000A4ACD /* URLWebSite.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		604EBC342BF35DC000EC3305 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		608F6F492BF3612700DFF3E2 /* Marvelmodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marvelmodel.xcdatamodel; sourceTree = "<group>"; };
 		7B98011A2BE5B504000A4ACD /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		7B98011C2BE5B6DC000A4ACD /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		7B98011E2BE5B84D000A4ACD /* URLWebSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLWebSite.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				7B9801352BE5D587000A4ACD /* CharacterCell.swift */,
+				604EBC342BF35DC000EC3305 /* CharacterDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 				7BA5AED62BE1BBF9008D0BCC /* LaunchScreen.storyboard */,
 				7BA5AED92BE1BBF9008D0BCC /* Info.plist */,
 				7BA5AEE12BE1C8AA008D0BCC /* marvel.keys */,
+				608F6F482BF3612700DFF3E2 /* Marvelmodel.xcdatamodeld */,
 			);
 			path = MarvelApp;
 			sourceTree = "<group>";
@@ -249,6 +255,8 @@
 				7BA5AED02BE1BBF7008D0BCC /* ViewController.swift in Sources */,
 				7B9801292BE5BE6D000A4ACD /* EventItem.swift in Sources */,
 				7BA5AEEA2BE270FC008D0BCC /* Keys.swift in Sources */,
+				608F6F4A2BF3612700DFF3E2 /* Marvelmodel.xcdatamodeld in Sources */,
+				604EBC352BF35DC000EC3305 /* CharacterDetailViewController.swift in Sources */,
 				7BA5AEE52BE1C9F1008D0BCC /* DoubleExtesion.swift in Sources */,
 				7B98012B2BE5BF59000A4ACD /* APIResponse.swift in Sources */,
 				7BA5AEE72BE1CA25008D0BCC /* StringExtension.swift in Sources */,
@@ -507,6 +515,19 @@
 			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		608F6F482BF3612700DFF3E2 /* Marvelmodel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				608F6F492BF3612700DFF3E2 /* Marvelmodel.xcdatamodel */,
+			);
+			currentVersion = 608F6F492BF3612700DFF3E2 /* Marvelmodel.xcdatamodel */;
+			path = Marvelmodel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7BA5AEC02BE1BBF7008D0BCC /* Project object */;
 }

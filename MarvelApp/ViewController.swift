@@ -52,7 +52,20 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource{
         
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowCharacterDetailSegue" {
+            if let indexPath = characterCollectionView.indexPathsForSelectedItems?.first {
+                let selectedCharacter = characterManager?.getCharacter(at: indexPath.row)
+                if let destinationVC = segue.destination as? CharacterDetailViewController {
+                    destinationVC.character = selectedCharacter
+                }
+            }
+        }
+    }
+
+    
 }
+
 
 extension ViewController : UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
